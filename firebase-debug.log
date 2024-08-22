@@ -1,0 +1,67 @@
+[debug] [2024-07-29T03:44:27.239Z] ----------------------------------------------------------------------
+[debug] [2024-07-29T03:44:27.241Z] Command:       /home/felps/.nvm/versions/node/v20.15.1/bin/node /home/felps/.local/share/pnpm/global/5/node_modules/firebase-tools/lib/bin/firebase.js deploy
+[debug] [2024-07-29T03:44:27.241Z] CLI Version:   13.14.2
+[debug] [2024-07-29T03:44:27.241Z] Platform:      linux
+[debug] [2024-07-29T03:44:27.241Z] Node Version:  v20.15.1
+[debug] [2024-07-29T03:44:27.242Z] Time:          Mon Jul 29 2024 00:44:27 GMT-0300 (Brasilia Standard Time)
+[debug] [2024-07-29T03:44:27.242Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-29T03:44:27.290Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-29T03:44:27.291Z] > authorizing via signed-in user (felipin.bxn@gmail.com)
+[debug] [2024-07-29T03:44:27.291Z] [iam] checking project countrydle for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-29T03:44:27.292Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/countrydle:testIamPermissions [none]
+[debug] [2024-07-29T03:44:27.292Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/countrydle:testIamPermissions x-goog-quota-user=projects/countrydle
+[debug] [2024-07-29T03:44:27.293Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/countrydle:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-29T03:44:28.167Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/countrydle:testIamPermissions 200
+[debug] [2024-07-29T03:44:28.167Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/countrydle:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-29T03:44:28.168Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/countrydle [none]
+[debug] [2024-07-29T03:44:28.652Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/countrydle 200
+[debug] [2024-07-29T03:44:28.653Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/countrydle {"projectId":"countrydle","projectNumber":"1077303651324","displayName":"countrydle","name":"projects/countrydle","resources":{"hostingSite":"countrydle","realtimeDatabaseInstance":"countrydle-default-rtdb","storageBucket":"countrydle.appspot.com","locationId":"southamerica-east1"},"state":"ACTIVE","etag":"1_2288456d-be07-4ee8-bd70-efde80f3639e"}
+[debug] [2024-07-29T03:44:30.560Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/countrydle/sites pageToken=&pageSize=10
+[debug] [2024-07-29T03:44:32.033Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/countrydle/sites 200
+[debug] [2024-07-29T03:44:32.033Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/countrydle/sites {"sites":[{"name":"projects/countrydle/sites/countrydle","defaultUrl":"https://countrydle.web.app","appId":"1:1077303651324:web:6110ced619b80814086079","type":"DEFAULT_SITE"}]}
+[debug] [2024-07-29T03:44:32.033Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1077303651324:web:6110ced619b80814086079/config [none]
+[debug] [2024-07-29T03:44:33.076Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1077303651324:web:6110ced619b80814086079/config 200
+[debug] [2024-07-29T03:44:33.076Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1077303651324:web:6110ced619b80814086079/config {"projectId":"countrydle","appId":"1:1077303651324:web:6110ced619b80814086079","databaseURL":"https://countrydle-default-rtdb.firebaseio.com","storageBucket":"countrydle.appspot.com","locationId":"southamerica-east1","apiKey":"AIzaSyAGDV4GDQpok3fgOVzM99dWXgGSW0y3tTo","authDomain":"countrydle.firebaseapp.com","messagingSenderId":"1077303651324"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-07-29T03:44:37.245Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/countrydle/sites/countrydle [none]
+[debug] [2024-07-29T03:44:37.686Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/countrydle/sites/countrydle 200
+[debug] [2024-07-29T03:44:37.687Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/countrydle/sites/countrydle {"name":"projects/countrydle/sites/countrydle","defaultUrl":"https://countrydle.web.app","appId":"1:1077303651324:web:6110ced619b80814086079","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.5
+
+[info]   - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+
+[info] ./app/[lang]/classic/page.tsx:5:48
+Type error: Binding element 'lang' implicitly has an 'any' type.
+
+  3 | import React from "react";
+  4 |
+> 5 | export default async function Page({ params: { lang } }) {
+    |                                                ^
+  6 | 	return (
+  7 | 		<main className="container">
+  8 | 			<div className=" mx-auto py-8">
+
+[debug] [2024-07-29T03:44:55.839Z] Error: ENOENT: no such file or directory, open '/home/felps/dev/countrydle/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang={params.lang}>
-			<body>{children}</body>
+			<body className="bg-slate-900 w-screen h-screen">{children}</body>
 		</html>
 	);
 }

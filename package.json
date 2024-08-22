@@ -11,6 +11,8 @@
 	"dependencies": {
 		"@formatjs/intl-localematcher": "^0.5.4",
 		"@types/negotiator": "^0.6.3",
+		"firebase": "^10.12.4",
+		"mongodb": "^6.8.0",
 		"negotiator": "^0.6.3",
 		"next": "14.2.5",
 		"react": "^18",
